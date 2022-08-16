@@ -17,10 +17,10 @@ public class StudentConfig {
     CommandLineRunner commandLineRunner(StudentRepository repository) {
         return args -> {
           Student mariam = new Student("Mariam", "marima@gmail.com",
-                    LocalDate.of(2000, APRIL,1), 21);
+                    LocalDate.of(2000, APRIL,1));
 
             Student alex = new Student("Alex", "alex@gmail.com",
-                    LocalDate.of(2004, APRIL,1), 21);
+                    LocalDate.of(2004, APRIL,1));
 
             repository.saveAll(List.of(mariam, alex));
 
